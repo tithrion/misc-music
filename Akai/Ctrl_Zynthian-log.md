@@ -1,0 +1,302 @@
+# MIDI Controller Dump Akai MPK225 (Zynthian Preset)
+
+## Pads
+### Pad A01
+    CH#11 NOTE_ON 36, Vel: 120
+    CH#11 NOTE_OFF 36, Vel: 0
+### Pad A02
+    CH#11 NOTE_ON 37, Vel: 123
+    CH#11 NOTE_OFF 37, Vel: 0
+### Pad A03
+    CH#11 NOTE_ON 38, Vel: 121
+    CH#11 NOTE_OFF 38, Vel: 0
+### Pad A04
+    CH#11 NOTE_ON 39, Vel: 119
+    CH#11 NOTE_OFF 39, Vel: 0
+### Pad A05
+    CH#11 NOTE_ON 40, Vel: 119
+    CH#11 NOTE_OFF 40, Vel: 0
+### Pad A06
+    CH#11 NOTE_ON 41, Vel: 121
+    CH#11 NOTE_OFF 41, Vel: 0
+### Pad A07
+    CH#11 NOTE_ON 42, Vel: 119
+    CH#11 NOTE_OFF 42, Vel: 0
+### Pad A08
+    CH#11 NOTE_ON 43, Vel: 120
+    CH#11 NOTE_OFF 43, Vel: 0
+
+### Pad B09
+    CH#11 NOTE_ON 44, Vel: 120
+    CH#11 NOTE_OFF 44, Vel: 0
+### Pad B10
+    CH#11 NOTE_ON 45, Vel: 121
+    CH#11 NOTE_OFF 45, Vel: 0
+### Pad B11
+    CH#11 NOTE_ON 46, Vel: 118
+    CH#11 NOTE_OFF 46, Vel: 0
+### Pad B12
+    CH#11 NOTE_ON 47, Vel: 119
+    CH#11 NOTE_OFF 47, Vel: 0
+### Pad B13
+    CH#11 NOTE_ON 48, Vel: 117
+    CH#11 NOTE_OFF 48, Vel: 0
+### Pad B14
+    CH#11 NOTE_ON 49, Vel: 118
+    CH#11 NOTE_OFF 49, Vel: 0
+### Pad B15
+    CH#11 NOTE_ON 50, Vel: 119
+    CH#11 NOTE_OFF 50, Vel: 0
+### Pad B16
+    CH#11 NOTE_ON 51, Vel: 114
+    CH#11 NOTE_OFF 51, Vel: 0
+
+### Pad C17
+    CH#11 NOTE_ON 52, Vel: 117
+    CH#11 NOTE_OFF 52, Vel: 0
+### Pad C18
+    CH#11 NOTE_ON 53, Vel: 122
+    CH#11 NOTE_OFF 53, Vel: 0
+### Pad C19
+    CH#11 NOTE_ON 54, Vel: 118
+    CH#11 NOTE_OFF 54, Vel: 0
+### Pad C20
+    CH#11 NOTE_ON 55, Vel: 118
+    CH#11 NOTE_OFF 55, Vel: 0
+### Pad C21
+    CH#11 NOTE_ON 56, Vel: 115
+    CH#11 NOTE_OFF 56, Vel: 0
+### Pad C22
+    CH#11 NOTE_ON 57, Vel: 120
+    CH#11 NOTE_OFF 57, Vel: 0
+### Pad C23
+    CH#11 NOTE_ON 58, Vel: 116
+    CH#11 NOTE_OFF 58, Vel: 0
+### Pad C24
+    CH#11 NOTE_ON 59, Vel: 114
+    CH#11 NOTE_OFF 59, Vel: 0
+
+### Pad D25
+    CH#11 NOTE_ON 60, Vel: 121
+    CH#11 NOTE_OFF 60, Vel: 0
+### Pad D26
+    CH#11 NOTE_ON 61, Vel: 126
+    CH#11 NOTE_OFF 61, Vel: 0
+### Pad D27
+    CH#11 NOTE_ON 62, Vel: 121
+    CH#11 NOTE_OFF 62, Vel: 0
+### Pad D28
+    CH#11 NOTE_ON 63, Vel: 121
+    CH#11 NOTE_OFF 63, Vel: 0
+### Pad D29
+    CH#11 NOTE_ON 64, Vel: 120
+    CH#11 NOTE_OFF 64, Vel: 0
+### Pad D30
+    CH#11 NOTE_ON 65, Vel: 123
+    CH#11 NOTE_OFF 65, Vel: 0
+### Pad D31
+    CH#11 NOTE_ON 66, Vel: 123
+    CH#11 NOTE_OFF 66, Vel: 0
+### Pad D32
+    CH#11 NOTE_ON 67, Vel: 120
+    CH#11 NOTE_OFF 67, Vel: 0
+
+## Ctrlr Bank A
+### Knob 1
+    CH#02 CONTROL_CHANGE 50 => 1
+    CH#02 CONTROL_CHANGE 50 => 127
+### Knob 2
+    CH#02 CONTROL_CHANGE 51 => 1
+    CH#02 CONTROL_CHANGE 51 => 127
+### Knob 3
+    CH#02 CONTROL_CHANGE 52 => 1
+    CH#02 CONTROL_CHANGE 52 => 127
+### Knob 4
+    CH#02 CONTROL_CHANGE 53 => 1
+    CH#02 CONTROL_CHANGE 53 => 127
+### Knob 5
+    CH#02 CONTROL_CHANGE 54 => 1
+    CH#02 CONTROL_CHANGE 54 => 127
+### Knob 6
+    CH#02 CONTROL_CHANGE 55 => 1
+    CH#02 CONTROL_CHANGE 55 => 127
+### Knob 7
+    CH#02 CONTROL_CHANGE 56 => 1
+    CH#02 CONTROL_CHANGE 56 => 127
+### Knob 8
+    CH#02 CONTROL_CHANGE 57 => 1
+    CH#02 CONTROL_CHANGE 57 => 127
+
+### Switch 1
+    CH#02 CONTROL_CHANGE 28 => 127
+    CH#02 CONTROL_CHANGE 28 => 0
+### Switch 2
+    CH#02 CONTROL_CHANGE 29 => 127
+    CH#02 CONTROL_CHANGE 29 => 0
+### Switch 3
+    CH#02 CONTROL_CHANGE 30 => 127
+    CH#02 CONTROL_CHANGE 30 => 0
+### Switch 4
+    CH#02 CONTROL_CHANGE 31 => 127
+    CH#02 CONTROL_CHANGE 31 => 0
+
+## Ctrlr Bank B
+### Knob 9
+    CH#03 CONTROL_CHANGE 50 => 1
+    CH#03 CONTROL_CHANGE 50 => 127
+### Knob 10
+    CH#03 CONTROL_CHANGE 51 => 1
+    CH#03 CONTROL_CHANGE 51 => 127
+### Knob 11
+    CH#03 CONTROL_CHANGE 52 => 1
+    CH#03 CONTROL_CHANGE 52 => 127
+### Knob 12
+    CH#03 CONTROL_CHANGE 53 => 1
+    CH#03 CONTROL_CHANGE 53 => 127
+### Knob 13
+    CH#03 CONTROL_CHANGE 54 => 1
+    CH#03 CONTROL_CHANGE 54 => 127
+### Knob 14
+    CH#03 CONTROL_CHANGE 55 => 1
+    CH#03 CONTROL_CHANGE 55 => 127
+### Knob 15
+    CH#03 CONTROL_CHANGE 56 => 1
+    CH#03 CONTROL_CHANGE 56 => 127
+### Knob 16
+    CH#03 CONTROL_CHANGE 57 => 1
+    CH#03 CONTROL_CHANGE 57 => 127
+
+### Switch 5
+    CH#02 CONTROL_CHANGE 75 => 127
+    CH#02 CONTROL_CHANGE 75 => 0
+### Switch 6
+    CH#02 CONTROL_CHANGE 76 => 127
+    CH#02 CONTROL_CHANGE 76 => 0
+### Switch 7
+    CH#02 CONTROL_CHANGE 77 => 127
+    CH#02 CONTROL_CHANGE 77 => 0
+### Switch 8
+    CH#02 CONTROL_CHANGE 78 => 127
+    CH#02 CONTROL_CHANGE 78 => 0
+
+## Ctrlr Bank C
+### Knob 17
+    CH#04 CONTROL_CHANGE 50 => 1
+    CH#04 CONTROL_CHANGE 50 => 127
+### Knob 18
+    CH#04 CONTROL_CHANGE 51 => 1
+    CH#04 CONTROL_CHANGE 51 => 127
+### Knob 19
+    CH#04 CONTROL_CHANGE 52 => 1
+    CH#04 CONTROL_CHANGE 52 => 127
+### Knob 20
+    CH#04 CONTROL_CHANGE 53 => 1
+    CH#04 CONTROL_CHANGE 53 => 127
+### Knob 21
+    CH#04 CONTROL_CHANGE 54 => 1
+    CH#04 CONTROL_CHANGE 54 => 127
+### Knob 22
+    CH#04 CONTROL_CHANGE 55 => 1
+    CH#04 CONTROL_CHANGE 55 => 127
+### Knob 23
+    CH#04 CONTROL_CHANGE 56 => 1
+    CH#04 CONTROL_CHANGE 56 => 127
+### Knob 24
+    CH#04 CONTROL_CHANGE 57 => 1
+    CH#04 CONTROL_CHANGE 57 => 127
+
+### Switch 9
+    CH#02 CONTROL_CHANGE 106 => 127
+    CH#02 CONTROL_CHANGE 106 => 0
+### Switch 10
+    CH#02 CONTROL_CHANGE 107 => 127
+    CH#02 CONTROL_CHANGE 107 => 0
+### Switch 11
+    CH#02 CONTROL_CHANGE 108 => 127
+    CH#02 CONTROL_CHANGE 108 => 0
+### Switch 12
+    CH#02 CONTROL_CHANGE 109 => 127
+    CH#02 CONTROL_CHANGE 109 => 0
+
+## Transport
+### Record
+    CH#01 CONTROL_CHANGE 119 => 127
+### Play
+    CH#01 CONTROL_CHANGE 118 => 127
+### Stop
+    CH#01 CONTROL_CHANGE 117 => 127
+### FFW
+    CH#01 CONTROL_CHANGE 116 => 127
+### RWD
+    CH#01 CONTROL_CHANGE 115 => 127
+### Loop
+    CH#01 CONTROL_CHANGE 114 => 127
+
+## Wheels
+### Modwheel
+    CH#01 CONTROL_CHANGE 1 => 1
+    ..
+    CH#01 CONTROL_CHANGE 1 => 127
+
+### Pitchbend
+    CH#01 PITCHWHEEL 0
+    ..
+    CH#01 PITCHWHEEL -8000
+    ..
+    CH#01 PITCHWHEEL 0
+    ..
+    CH#01 PITCHWHEEL 8000
+    ..
+    CH#01 PITCHWHEEL 0
+
+## Keyboard
+    CH#01 NOTE_ON 48, Vel: 99
+    CH#01 NOTE_OFF 48, Vel: 0
+    CH#01 NOTE_ON 49, Vel: 123
+    CH#01 NOTE_OFF 49, Vel: 0
+    CH#01 NOTE_ON 50, Vel: 127
+    CH#01 NOTE_OFF 50, Vel: 0
+    CH#01 NOTE_ON 51, Vel: 127
+    CH#01 NOTE_OFF 51, Vel: 0
+    CH#01 NOTE_ON 52, Vel: 104
+    CH#01 NOTE_OFF 52, Vel: 0
+    CH#01 NOTE_ON 53, Vel: 63
+    CH#01 NOTE_OFF 53, Vel: 0
+    CH#01 NOTE_ON 54, Vel: 127
+    CH#01 NOTE_OFF 54, Vel: 0
+    CH#01 NOTE_ON 55, Vel: 127
+    CH#01 NOTE_OFF 55, Vel: 0
+    CH#01 NOTE_ON 56, Vel: 127
+    CH#01 NOTE_OFF 56, Vel: 0
+    CH#01 NOTE_ON 57, Vel: 117
+    CH#01 NOTE_OFF 57, Vel: 0
+    CH#01 NOTE_ON 58, Vel: 127
+    CH#01 NOTE_OFF 58, Vel: 0
+    CH#01 NOTE_ON 59, Vel: 63
+    CH#01 NOTE_OFF 59, Vel: 0
+    CH#01 NOTE_ON 60, Vel: 127
+    CH#01 NOTE_OFF 60, Vel: 0
+    CH#01 NOTE_ON 61, Vel: 127
+    CH#01 NOTE_OFF 61, Vel: 0
+    CH#01 NOTE_ON 62, Vel: 101
+    CH#01 NOTE_OFF 62, Vel: 0
+    CH#01 NOTE_ON 63, Vel: 127
+    CH#01 NOTE_OFF 63, Vel: 0
+    CH#01 NOTE_ON 64, Vel: 127
+    CH#01 NOTE_OFF 64, Vel: 0
+    CH#01 NOTE_ON 65, Vel: 127
+    CH#01 NOTE_OFF 65, Vel: 0
+    CH#01 NOTE_ON 66, Vel: 127
+    CH#01 NOTE_OFF 66, Vel: 0
+    CH#01 NOTE_ON 67, Vel: 118
+    CH#01 NOTE_OFF 67, Vel: 0
+    CH#01 NOTE_ON 68, Vel: 127
+    CH#01 NOTE_OFF 68, Vel: 0
+    CH#01 NOTE_ON 69, Vel: 76
+    CH#01 NOTE_OFF 69, Vel: 0
+    CH#01 NOTE_ON 70, Vel: 127
+    CH#01 NOTE_OFF 70, Vel: 0
+    CH#01 NOTE_ON 71, Vel: 113
+    CH#01 NOTE_OFF 71, Vel: 0
+    CH#01 NOTE_ON 72, Vel: 127
+    CH#01 NOTE_OFF 72, Vel: 0
