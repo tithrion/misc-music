@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE MIDINameDocument PUBLIC "-//MIDI Manufacturers Association//DTD MIDINameDocument 1.0//EN" "http://www.midi.org/dtds/MIDINameDocument10.dtd">
+
+<MIDINameDocument>
+  <Author>Steffen Klein</Author>
+
+  <MasterDeviceNames>
+    <Manufacturer>Behringer</Manufacturer>
+    <Model>VIRTUALIZER 3D FX2000</Model>
+
+    <CustomDeviceMode Name="Default">
+      <ChannelNameSetAssignments>
+        <ChannelNameSetAssignment Channel="1" NameSet="FX2000 Presets"/>
+      </ChannelNameSetAssignments>
+    </CustomDeviceMode>
+
+    <ChannelNameSet Name="FX2000 Presets">
+      <AvailableForChannels>
+        <AvailableChannel Channel="1"/>
+      </AvailableForChannels>
+
+      <!-- ROM / Internal -->
+      <UsesPatchNameList Name="Internal Presets">
+        <PatchBank BankSelectMSB="0" BankSelectLSB="0"/>
+      </UsesPatchNameList>
+
+      <!-- RAM / User -->
+      <UsesPatchNameList Name="User Presets">
+        <PatchBank BankSelectMSB="1" BankSelectLSB="0"/>
+      </UsesPatchNameList>
+    </ChannelNameSet>
+
+    <!-- ========================= -->
+    <!-- Internal Presets (ROM)    -->
+    <!-- CC0 = 0, PC 0–99          -->
+    <!-- ========================= -->
+    <PatchNameList Name="Internal Presets">
+      <Patch Number="0" Name="Cathedral of Cologne"/>
+      <Patch Number="1" Name="Concert Cathedral"/>
+      <Patch Number="2" Name="Big Plate"/>
+      <Patch Number="3" Name="Dark Plate"/>
+      <Patch Number="4" Name="Small Chamber"/>
+      <Patch Number="5" Name="Drum Closet"/>
+      <Patch Number="6" Name="Bright Room"/>
+      <Patch Number="7" Name="Ambient Room"/>
+      <Patch Number="8" Name="Large Hall"/>
+      <Patch Number="9" Name="Concert Hall"/>
+      <Patch Number="10" Name="Live Studio"/>
+      <Patch Number="11" Name="Dry Studio"/>
+      <Patch Number="12" Name="Arena"/>
+      <Patch Number="13" Name="Garage"/>
+      <Patch Number="14" Name="Guitar Amp Spring"/>
+      <Patch Number="15" Name="Studio Spring"/>
+      <Patch Number="16" Name="Big Drums"/>
+      <Patch Number="17" Name="Nice Ambience"/>
+      <Patch Number="18" Name="Reflecting Room"/>
+      <Patch Number="19" Name="Voice Widener"/>
+      <Patch Number="20" Name="Bass Drum Extender"/>
+      <Patch Number="21" Name="Phil's Drums"/>
+      <Patch Number="22" Name="Short Reverse"/>
+      <Patch Number="23" Name="Medium Reverse"/>
+      <Patch Number="24" Name="Short Delay"/>
+      <Patch Number="25" Name="Medium Delay"/>
+      <Patch Number="26" Name="Old Tape"/>
+      <Patch Number="27" Name="Big Tape"/>
+      <Patch Number="28" Name="Ping Pong"/>
+      <Patch Number="29" Name="Chaos"/>
+      <Patch Number="30" Name="Stereo Chorus"/>
+      <Patch Number="31" Name="Analog Chorus"/>
+      <Patch Number="32" Name="Vintage Chorus"/>
+      <Patch Number="33" Name="Ultra Chorus"/>
+      <Patch Number="34" Name="Stereo Flanger"/>
+      <Patch Number="35" Name="Vintage Flanger"/>
+      <Patch Number="36" Name="Jet Stream Flanger"/>
+      <Patch Number="37" Name="Stereo Phaser"/>
+      <Patch Number="38" Name="Retro Phaser"/>
+      <Patch Number="39" Name="Wild Phaser"/>
+      <Patch Number="40" Name="Vintage Phaser"/>
+      <Patch Number="41" Name="Dual Phaser"/>
+      <Patch Number="42" Name="Rotary Speaker"/>
+      <Patch Number="43" Name="B3 Leslie"/>
+      <Patch Number="44" Name="Stereo Pitch Shifter"/>
+      <Patch Number="45" Name="Major 7"/>
+      <Patch Number="46" Name="It's Jazz"/>
+      <Patch Number="47" Name="Real Chorus!"/>
+      <Patch Number="48" Name="Vibrato"/>
+      <Patch Number="49" Name="Tremolo"/>
+      <Patch Number="50" Name="Panning"/>
+      <Patch Number="51" Name="Compressor"/>
+      <Patch Number="52" Name="Expander"/>
+      <Patch Number="53" Name="Gate"/>
+      <Patch Number="54" Name="Analog Compr./Limiter"/>
+      <Patch Number="55" Name="Ultramizer"/>
+      <Patch Number="56" Name="Denoiser"/>
+      <Patch Number="57" Name="De-Esser"/>
+      <Patch Number="58" Name="Wave Designer"/>
+      <Patch Number="59" Name="Exciter"/>
+      <Patch Number="60" Name="Ultrafex"/>
+      <Patch Number="61" Name="Ultrabass"/>
+      <Patch Number="62" Name="Subbass"/>
+      <Patch Number="63" Name="Stereo Imager"/>
+      <Patch Number="64" Name="Ultra Wide"/>
+      <Patch Number="65" Name="Headphone Extender"/>
+      <Patch Number="66" Name="Speaker Extender"/>
+      <Patch Number="67" Name="Auto Filter"/>
+      <Patch Number="68" Name="LFO Filter"/>
+      <Patch Number="69" Name="Parametric EQ"/>
+      <Patch Number="70" Name="Graphic EQ"/>
+      <Patch Number="71" Name="Vocal Speaker"/>
+      <Patch Number="72" Name="Tube Amp"/>
+      <Patch Number="73" Name="Crunch"/>
+      <Patch Number="74" Name="Blues"/>
+      <Patch Number="75" Name="Heavy Metal"/>
+      <Patch Number="76" Name="Fuzz Box"/>
+      <Patch Number="77" Name="Radio Speaker"/>
+      <Patch Number="78" Name="Bad Speaker"/>
+      <Patch Number="79" Name="Robotizer"/>
+      <Patch Number="80" Name="AM-Radio"/>
+      <Patch Number="81" Name="Old Record Player"/>
+      <Patch Number="82" Name="Vintage Tape"/>
+      <Patch Number="83" Name="Sampler"/>
+      <Patch Number="84" Name="Vocoder"/>
+      <Patch Number="85" Name="Voice Canceler"/>
+      <Patch Number="86" Name="Resonator"/>
+      <Patch Number="87" Name="Chorus & Reverb 1"/>
+      <Patch Number="88" Name="Chorus & Reverb 2"/>
+      <Patch Number="89" Name="Flanger & Reverb 1"/>
+      <Patch Number="90" Name="Flanger & Reverb 2"/>
+      <Patch Number="91" Name="Leslie & Reverb"/>
+      <Patch Number="92" Name="Pitch & Reverb"/>
+      <Patch Number="93" Name="Delay & Reverb"/>
+      <Patch Number="94" Name="Tremolo & Reverb"/>
+      <Patch Number="95" Name="Phaser & Reverb"/>
+      <Patch Number="96" Name="Chorus & Delay"/>
+      <Patch Number="97" Name="Flanger & Delay"/>
+      <Patch Number="98" Name="Pitch & Delay"/>
+      <Patch Number="99" Name="Tremolo & Delay"/>
+    </PatchNameList>
+
+    <!-- ========================= -->
+    <!-- User Presets (RAM)        -->
+    <!-- CC0 = 1, PC 0–99          -->
+    <!-- ========================= -->
+    <PatchNameList Name="User Presets">
+      <Patch Number="0" Name="Dyna Chorus"/>
+      <Patch Number="1" Name="Metallic Flanger"/>
+      <Patch Number="2" Name="Gated Ambience"/>
+      <Patch Number="3" Name="Chorus Room"/>
+      <Patch Number="4" Name="Tape Echo & Room"/>
+      <Patch Number="5" Name="Quart Room"/>
+      <Patch Number="6" Name="Crazy Music Box"/>
+      <Patch Number="7" Name="Old Gramophone"/>
+      <Patch Number="8" Name="Crunch Box"/>
+      <Patch Number="9" Name="Auto Wah"/>
+      <Patch Number="10" Name="Filter Groove"/>
+      <Patch Number="11" Name="Space Radio"/>
+      <Patch Number="12" Name="Bubble Drums"/>
+      <Patch Number="13" Name="Brick Wall"/>
+      <Patch Number="14" Name="Arpeggiator"/>
+      <Patch Number="15" Name="Staccato"/>
+      <Patch Number="16" Name="The Voice"/>
+      <Patch Number="17" Name="Pseudo Stereo"/>
+      <Patch Number="18" Name="Room Phaser"/>
+      <Patch Number="19" Name="Computer Game"/>
+      <Patch Number="20" Name="The Final Mix"/>
+      <Patch Number="21" Name="Bass Chorus"/>
+      <Patch Number="22" Name="Live Room"/>
+      <Patch Number="23" Name="In the Closet"/>
+      <Patch Number="24" Name="Symphonic"/>
+      <Patch Number="25" Name="Under the Bridge"/>
+      <Patch Number="26" Name="Bass EQ"/>
+      <Patch Number="27" Name="Blue's Groove"/>
+      <Patch Number="28" Name="Space Flanger"/>
+      <Patch Number="29" Name="Gold Verb"/>
+      <Patch Number="30" Name="80s Digital"/>
+      <Patch Number="31" Name="Arpeggiator VCF"/>
+      <Patch Number="32" Name="Valve Preamp"/>
+      <Patch Number="33" Name="Near Field Wide!"/>
+      <Patch Number="34" Name="Ping Pong Pan"/>
+      <Patch Number="35" Name="Subwoofer Room"/>
+      <Patch Number="36" Name="Modulizz"/>
+      <Patch Number="37" Name="Recording Studio"/>
+      <Patch Number="38" Name="Flangerus"/>
+      <Patch Number="39" Name="Cheap Spring"/>
+      <Patch Number="40" Name="British Solo"/>
+      <Patch Number="41" Name="Jazz Club"/>
+      <Patch Number="42" Name="Small Speaker"/>
+      <Patch Number="43" Name="Auditorium"/>
+      <Patch Number="44" Name="De-Noiz"/>
+      <Patch Number="45" Name="Minor 7"/>
+      <Patch Number="46" Name="Ballad Tremolo"/>
+      <Patch Number="47" Name="Trance"/>
+      <Patch Number="48" Name="Disco Sound"/>
+      <Patch Number="49" Name="Duo Reverbro"/>
+      <Patch Number="50" Name="Soft Wah Wah"/>
+      <Patch Number="51" Name="Soft Chorus Reverse"/>
+      <Patch Number="52" Name="Fat Guitar"/>
+      <Patch Number="53" Name="4 Space FX"/>
+      <Patch Number="54" Name="Fatty"/>
+      <Patch Number="55" Name="Spacer"/>
+      <Patch Number="56" Name="Synth Heaven"/>
+      <Patch Number="57" Name="Jean Glitter"/>
+      <Patch Number="58" Name="Soft Tube"/>
+      <Patch Number="59" Name="Drumzzz"/>
+      <Patch Number="60" Name="Perc Compression"/>
+      <Patch Number="61" Name="Industrializer"/>
+      <Patch Number="62" Name="Strange Glide 140"/>
+      <Patch Number="63" Name="Square at 140"/>
+      <Patch Number="64" Name="Square Breath 140"/>
+      <Patch Number="65" Name="Pitch Chorus"/>
+      <Patch Number="66" Name="Chorus 2"/>
+      <Patch Number="67" Name="Soft Metallizer"/>
+      <Patch Number="68" Name="Phaser"/>
+      <Patch Number="69" Name="Flanger in Background"/>
+      <Patch Number="70" Name="Hard Flanger"/>
+      <Patch Number="71" Name="Soft Flanger"/>
+      <Patch Number="72" Name="Delay 137 16th"/>
+      <Patch Number="73" Name="Vintage Picking"/>
+      <Patch Number="74" Name="Delay Stereo 137"/>
+      <Patch Number="75" Name="Distortion"/>
+      <Patch Number="76" Name="Robot"/>
+      <Patch Number="77" Name="Ultramaxxx"/>
+      <Patch Number="78" Name="Phil's Snare"/>
+      <Patch Number="79" Name="Wide"/>
+      <Patch Number="80" Name="Ambience"/>
+      <Patch Number="81" Name="Plateau"/>
+      <Patch Number="82" Name="Empty Living Room"/>
+      <Patch Number="83" Name="Echo Play"/>
+      <Patch Number="84" Name="Stage"/>
+      <Patch Number="85" Name="Big Cathedral"/>
+      <Patch Number="86" Name="Eternity"/>
+      <Patch Number="87" Name="Nice Hall"/>
+      <Patch Number="88" Name="Reverse Tremolo"/>
+      <Patch Number="89" Name="Reverse"/>
+      <Patch Number="90" Name="Vocal Chorus"/>
+      <Patch Number="91" Name="Smooth Vocal FX"/>
+      <Patch Number="92" Name="Fatty Voice Chorus"/>
+      <Patch Number="93" Name="Voice EQ"/>
+      <Patch Number="94" Name="Phone Voice"/>
+      <Patch Number="95" Name="Voice Compressor"/>
+      <Patch Number="96" Name="Empty Arena (Voice)"/>
+      <Patch Number="97" Name="Panomolo"/>
+      <Patch Number="98" Name="Distorted Vocal"/>
+      <Patch Number="99" Name="Mountain Echoes"/>
+    </PatchNameList>
+
+  </MasterDeviceNames>
+</MIDINameDocument>
+

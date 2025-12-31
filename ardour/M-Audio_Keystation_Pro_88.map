@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ArdourMIDIBindings version="1.0.0" name="M-Audio Keystation Pro 88 Full">
+
+  <Binding channel="1" ctrl="7"  uri="/route/gain 1"/>
+  <Binding channel="1" ctrl="8"  uri="/route/gain 2"/>
+  <Binding channel="1" ctrl="9"  uri="/route/gain 3"/>
+  <Binding channel="1" ctrl="10" uri="/route/gain 4"/>
+  <Binding channel="1" ctrl="11" uri="/route/gain 5"/>
+  <Binding channel="1" ctrl="12" uri="/route/gain 6"/>
+  <Binding channel="1" ctrl="13" uri="/route/gain 7"/>
+  <Binding channel="1" ctrl="14" uri="/route/gain 8"/>
+  <Binding channel="1" ctrl="15" uri="/bus/gain master"/>
+
+  <Binding channel="1" ctrl="16" uri="/route/pan_inner 1"/>
+  <Binding channel="1" ctrl="17" uri="/route/pan_inner 2"/>
+  <Binding channel="1" ctrl="18" uri="/route/pan_inner 3"/>
+  <Binding channel="1" ctrl="19" uri="/route/pan_inner 4"/>
+  <Binding channel="1" ctrl="20" uri="/route/pan_inner 5"/>
+  <Binding channel="1" ctrl="21" uri="/route/pan_inner 6"/>
+  <Binding channel="1" ctrl="22" uri="/route/pan_inner 7"/>
+  <Binding channel="1" ctrl="23" uri="/route/pan_inner 8"/>
+
+  <Binding channel="1" ctrl="24" uri="/route/send/gain 1 1"/>
+  <Binding channel="1" ctrl="25" uri="/route/send/gain 2 1"/>
+  <Binding channel="1" ctrl="26" uri="/route/send/gain 3 1"/>
+  <Binding channel="1" ctrl="27" uri="/route/send/gain 4 1"/>
+  <Binding channel="1" ctrl="28" uri="/route/send/gain 5 1"/>
+  <Binding channel="1" ctrl="29" uri="/route/send/gain 6 1"/>
+  <Binding channel="1" ctrl="30" uri="/route/send/gain 7 1"/>
+  <Binding channel="1" ctrl="31" uri="/route/send/gain 8 1"/>
+
+  <Binding channel="1" ctrl="33" uri="/route/trim 1"/>
+  <Binding channel="1" ctrl="34" uri="/route/trim 2"/>
+  <Binding channel="1" ctrl="35" uri="/route/trim 3"/>
+  <Binding channel="1" ctrl="36" uri="/route/trim 4"/>
+  <Binding channel="1" ctrl="37" uri="/route/trim 5"/>
+  <Binding channel="1" ctrl="38" uri="/route/trim 6"/>
+  <Binding channel="1" ctrl="39" uri="/route/trim 7"/>
+  <Binding channel="1" ctrl="40" uri="/route/trim 8"/>
+
+  <Binding channel="1" ctrl="113" function="transport-roll"/>
+  <Binding channel="1" ctrl="114" function="transport-stop"/>
+  <Binding channel="1" ctrl="115" function="transport-start"/>
+  <Binding channel="1" ctrl="116" function="loop-toggle"/>
+  <Binding channel="1" ctrl="117" uri="/session/record_enable"/>
+  <Binding channel="1" ctrl="118" function="transport-end"/>
+
+  <Binding channel="1" ctrl="41" uri="/route/mute 1"/>
+  <Binding channel="1" ctrl="42" uri="/route/mute 2"/>
+  <Binding channel="1" ctrl="43" uri="/route/mute 3"/>
+  <Binding channel="1" ctrl="44" uri="/route/mute 4"/>
+  <Binding channel="1" ctrl="45" uri="/route/mute 5"/>
+  <Binding channel="1" ctrl="46" uri="/route/mute 6"/>
+  <Binding channel="1" ctrl="47" uri="/route/mute 7"/>
+  <Binding channel="1" ctrl="48" uri="/route/mute 8"/>
+
+</ArdourMIDIBindings>
