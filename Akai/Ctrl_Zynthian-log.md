@@ -1,5 +1,7 @@
 # MIDI Controller Dump Akai MPK225 (Zynthian Preset)
 
+Done with `aseqdump -p MPK225`.
+
 ## Pads
 ### Pad A01
     CH#11 NOTE_ON 36, Vel: 120
