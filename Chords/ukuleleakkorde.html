@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ukulele-Akkorde Übersicht</title>
+    <style>
+        @page {
+            size: A4 portrait;
+            margin: 10mm;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 15px;
+            background: white;
+        }
+        
+        .container {
+            width: 210mm;
+            min-height: 297mm;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 20px;
+            margin: 0 0 15px 0;
+            color: #333;
+        }
+        
+        .chord-grid {
+            display: table;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .header-row {
+            display: table-row;
+            font-weight: bold;
+            font-size: 11px;
+        }
+        
+        .header-cell {
+            display: table-cell;
+            text-align: center;
+            padding: 5px 2px;
+            border: 1px solid #ccc;
+            background: #f0f0f0;
+        }
+        
+        .header-cell:first-child {
+            width: 40px;
+        }
+        
+        .chord-row {
+            display: table-row;
+        }
+        
+        .note-label {
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+            font-weight: bold;
+            font-size: 13px;
+            border: 1px solid #ccc;
+            background: #f9f9f9;
+            padding: 5px;
+        }
+        
+        .fretboard-cell {
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+            border: 1px solid #ccc;
+            padding: 5px 2px;
+            width: 12%;
+        }
+        
+        .fretboard {
+            position: relative;
+            width: 50px;
+            height: 80px;
+            display: inline-block;
+            margin: 0 auto;
+        }
+        
+        .string {
+            position: absolute;
+            background: #333;
+            width: 1px;
+            height: 75px;
+            top: 5px;
+        }
+        
+        .fret {
+            position: absolute;
+            background: #666;
+            height: 2px;
+            width: 40px;
+            left: 5px;
+        }
+        
+        .nut {
+            position: absolute;
+            background: #000;
+            height: 3px;
+            width: 40px;
+            left: 5px;
+            top: 5px;
+        }
+        
+        .finger-dot {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: black;
+            z-index: 3;
+            transform: translate(-50%, -50%);
+        }
+        
+        .mute-mark {
+            position: absolute;
+            font-size: 10px;
+            font-weight: bold;
+            top: -8px;
+            transform: translateX(-50%);
+        }
+        
+        .open-mark {
+            position: absolute;
+            font-size: 10px;
+            font-weight: bold;
+            top: -8px;
+            transform: translateX(-50%);
+        }
+        
+        @media print {
+            body {
+                padding: 0;
+            }
+            .container {
+                page-break-after: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ukulele-Akkorde Übersicht</h1>
+        
+        <div class="chord-grid" id="chordGrid"></div>
+    </div>
+
+    <script>
+        const notes = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
+        const chordTypes = ['Dur', 'Moll', '7th', 'm7th', 'Aug', 'Dim', 'Sus2', 'Sus4'];
+        
+        // Ukulele-Akkorde: [Saite g-c-e-a], -1 = nicht spielen, 0 = leer, 1-4 = Bund
+        const chordShapes = {
+            'C': {
+                'Dur': [0, 0, 0, 3],
+                'Moll': [0, 3, 3, 3],
+                '7th': [0, 0, 0, 1],
+                'm7th': [0, 3, 3, 1],
+                'Aug': [1, 0, 0, 3],
+                'Dim': [0, 3, 2, 3],
+                'Sus2': [0, 2, 0, 3],
+                'Sus4': [0, 0, 1, 3]
+            },
+            'C#': {
+                'Dur': [1, 1, 1, 4],
+                'Moll': [1, 4, 4, 4],
+                '7th': [1, 1, 1, 2],
+                'm7th': [1, 4, 4, 2],
+                'Aug': [2, 1, 1, 4],
+                'Dim': [1, 4, 3, 4],
+                'Sus2': [1, 3, 1, 4],
+                'Sus4': [1, 1, 2, 4]
+            },
+            'D': {
+                'Dur': [2, 2, 2, 0],
+                'Moll': [2, 2, 1, 0],
+                '7th': [2, 2, 2, 3],
+                'm7th': [2, 2, 1, 3],
+                'Aug': [3, 2, 2, 1],
+                'Dim': [2, 3, 2, 3],
+                'Sus2': [2, 2, 0, 0],
+                'Sus4': [0, 2, 3, 0]
+            },
+            'D#': {
+                'Dur': [0, 3, 3, 1],
+                'Moll': [3, 3, 2, 1],
+                '7th': [3, 3, 3, 4],
+                'm7th': [3, 3, 2, 4],
+                'Aug': [0, 3, 3, 2],
+                'Dim': [3, 4, 3, 4],
+                'Sus2': [3, 3, 1, 1],
+                'Sus4': [1, 3, 4, 1]
+            },
+            'E': {
+                'Dur': [4, 4, 4, 2],
+                'Moll': [0, 4, 3, 2],
+                '7th': [1, 2, 0, 2],
+                'm7th': [0, 2, 0, 2],
+                'Aug': [1, 0, 0, 3],
+                'Dim': [0, 1, 0, 1],
+                'Sus2': [4, 4, 2, 2],
+                'Sus4': [2, 4, 0, 2]
+            },
+            'F': {
+                'Dur': [2, 0, 1, 0],
+                'Moll': [1, 0, 1, 3],
+                '7th': [2, 3, 1, 0],
+                'm7th': [1, 3, 1, 3],
+                'Aug': [2, 1, 1, 0],
+                'Dim': [1, 2, 1, 2],
+                'Sus2': [0, 0, 1, 3],
+                'Sus4': [3, 0, 1, 3]
+            },
+            'F#': {
+                'Dur': [3, 1, 2, 1],
+                'Moll': [2, 1, 2, 0],
+                '7th': [3, 4, 2, 1],
+                'm7th': [2, 4, 2, 4],
+                'Aug': [3, 2, 2, 1],
+                'Dim': [2, 3, 2, 3],
+                'Sus2': [1, 1, 2, 4],
+                'Sus4': [4, 1, 2, 2]
+            },
+            'G': {
+                'Dur': [0, 2, 3, 2],
+                'Moll': [0, 2, 3, 1],
+                '7th': [0, 2, 1, 2],
+                'm7th': [0, 2, 1, 1],
+                'Aug': [0, 3, 3, 2],
+                'Dim': [0, 1, 0, 1],
+                'Sus2': [0, 2, 3, 0],
+                'Sus4': [0, 2, 3, 3]
+            },
+            'G#': {
+                'Dur': [1, 3, 4, 3],
+                'Moll': [1, 3, 4, 2],
+                '7th': [1, 3, 2, 3],
+                'm7th': [1, 3, 2, 2],
+                'Aug': [1, 0, 0, 3],
+                'Dim': [1, 2, 1, 2],
+                'Sus2': [1, 3, 4, 1],
+                'Sus4': [1, 3, 4, 4]
+            },
+            'A': {
+                'Dur': [2, 1, 0, 0],
+                'Moll': [2, 0, 0, 0],
+                '7th': [0, 1, 0, 0],
+                'm7th': [0, 0, 0, 0],
+                'Aug': [2, 1, 1, 4],
+                'Dim': [2, 3, 2, 3],
+                'Sus2': [2, 4, 0, 0],
+                'Sus4': [2, 2, 0, 0]
+            },
+            'A#': {
+                'Dur': [3, 2, 1, 1],
+                'Moll': [3, 1, 1, 1],
+                '7th': [1, 2, 1, 1],
+                'm7th': [1, 1, 1, 1],
+                'Aug': [3, 2, 2, 1],
+                'Dim': [3, 4, 3, 4],
+                'Sus2': [3, 0, 1, 1],
+                'Sus4': [3, 3, 1, 1]
+            },
+            'B': {
+                'Dur': [4, 3, 2, 2],
+                'Moll': [4, 2, 2, 2],
+                '7th': [2, 3, 2, 2],
+                'm7th': [2, 2, 2, 2],
+                'Aug': [0, 3, 3, 2],
+                'Dim': [0, 1, 0, 1],
+                'Sus2': [4, 1, 2, 2],
+                'Sus4': [4, 4, 2, 2]
+            }
+        };
+        
+        const stringPositions = [5, 18.33, 31.67, 45]; // x-Positionen der 4 Saiten (g-c-e-a)
+        const fretPositions = [5, 23, 41, 59, 77]; // y-Positionen der Bünde (0=Sattel, dann Bund 1-4)
+        
+        function createFretboard(rootNote, chordType) {
+            const fretboard = document.createElement('div');
+            fretboard.className = 'fretboard';
+            
+            const shape = chordShapes[rootNote][chordType];
+            
+            // Sattel zeichnen
+            const nut = document.createElement('div');
+            nut.className = 'nut';
+            fretboard.appendChild(nut);
+            
+            // Saiten zeichnen (4 Saiten: g-c-e-a)
+            stringPositions.forEach((xPos, stringIndex) => {
+                const string = document.createElement('div');
+                string.className = 'string';
+                string.style.left = `${xPos}px`;
+                fretboard.appendChild(string);
+                
+                const fretValue = shape[stringIndex];
+                
+                // X für nicht anzuschlagende Saiten
+                if (fretValue === -1) {
+                    const mute = document.createElement('div');
+                    mute.className = 'mute-mark';
+                    mute.textContent = 'x';
+                    mute.style.left = `${xPos}px`;
+                    fretboard.appendChild(mute);
+                }
+                // O für leere Saiten
+                else if (fretValue === 0) {
+                    const open = document.createElement('div');
+                    open.className = 'open-mark';
+                    open.textContent = 'o';
+                    open.style.left = `${xPos}px`;
+                    fretboard.appendChild(open);
+                }
+                // Punkt für gegriffene Saiten
+                else if (fretValue >= 1 && fretValue <= 4) {
+                    const dot = document.createElement('div');
+                    dot.className = 'finger-dot';
+                    dot.style.left = `${xPos}px`;
+                    // Position mittig im Bund (zwischen zwei Bundstäben)
+                    const yPos = fretPositions[fretValue - 1] + 9; // Mitte zwischen den Bünden
+                    dot.style.top = `${yPos}px`;
+                    fretboard.appendChild(dot);
+                }
+            });
+            
+            // Bünde zeichnen (4 Bünde)
+            for (let i = 1; i <= 4; i++) {
+                const fret = document.createElement('div');
+                fret.className = 'fret';
+                fret.style.top = `${fretPositions[i]}px`;
+                fretboard.appendChild(fret);
+            }
+            
+            return fretboard;
+        }
+        
+        function buildGrid() {
+            const grid = document.getElementById('chordGrid');
+            
+            // Header-Zeile
+            const headerRow = document.createElement('div');
+            headerRow.className = 'header-row';
+            
+            const cornerCell = document.createElement('div');
+            cornerCell.className = 'header-cell';
+            cornerCell.textContent = 'Note';
+            headerRow.appendChild(cornerCell);
+            
+            chordTypes.forEach(chordType => {
+                const headerCell = document.createElement('div');
+                headerCell.className = 'header-cell';
+                headerCell.textContent = chordType;
+                headerRow.appendChild(headerCell);
+            });
+            
+            grid.appendChild(headerRow);
+            
+            // Zeilen für jede Note
+            notes.forEach(note => {
+                const row = document.createElement('div');
+                row.className = 'chord-row';
+                
+                const noteLabel = document.createElement('div');
+                noteLabel.className = 'note-label';
+                noteLabel.textContent = note;
+                row.appendChild(noteLabel);
+                
+                chordTypes.forEach(chordType => {
+                    const cell = document.createElement('div');
+                    cell.className = 'fretboard-cell';
+                    cell.appendChild(createFretboard(note, chordType));
+                    row.appendChild(cell);
+                });
+                
+                grid.appendChild(row);
+            });
+        }
+        
+        buildGrid();
+    </script>
+</body>
+</html>
